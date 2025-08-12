@@ -1,3 +1,5 @@
+[Versão em português](../README.md)
+
 # AI-Driven API Traffic Simulator: From Prompt to Production-Ready Architecture
 
 ## Abstract
