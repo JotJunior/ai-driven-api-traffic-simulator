@@ -1,3 +1,5 @@
+[English Version](en/README.md)
+
 # Simulador de Tráfego de API com IA: Do Prompt à Arquitetura Pronta para Produção
 
 ## Resumo
@@ -127,25 +129,25 @@ Esta distribuição reflete padrões de uso de aplicações do mundo real e gara
 
 A implementação segue uma abordagem estruturada em quatro fases:
 
-#### Fase 1: Fundação (Semana 1)
+#### Fase 1: Fundação
 - Implementação da estrutura principal do comando
 - Gerenciador de cliente HTTP com pool de conexões
 - Sistema básico de configuração
 - Orquestração inicial de corrotinas
 
-#### Fase 2: Motor de Simulação (Semana 2)
+#### Fase 2: Motor de Simulação
 - Implementação de padrões de comportamento do usuário
 - Temporização realista e aleatorização
 - Simulação de cenários de erro
 - Coleta básica de métricas
 
-#### Fase 3: Recursos Avançados (Semana 3)
+#### Fase 3: Recursos Avançados
 - Integração abrangente de métricas
 - Relatório de progresso em tempo real
 - Otimização de gerenciamento de memória
 - Tratamento avançado de erros
 
-#### Fase 4: Prontidão para Produção (Semana 4)
+#### Fase 4: Prontidão para Produção
 - Ajuste fino de performance e otimização
 - Mecanismos de desligamento gracioso
 - Suite abrangente de testes

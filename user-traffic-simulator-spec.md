@@ -344,28 +344,28 @@ O simulador gerará métricas que se integram com coletores Prometheus existente
 
 ### 9. Fases de Implementação
 
-#### Fase 1: Infraestrutura Principal (Semana 1)
+#### Fase 1: Infraestrutura Principal
 - [ ] Implementação da classe de comando
 - [ ] Arquitetura básica de corrotinas
 - [ ] Configuração de cliente HTTP
 - [ ] Gerenciamento de configuração
 - [ ] Simulação simples de usuário
 
-#### Fase 2: Motor de Comportamento (Semana 2)
+#### Fase 2: Motor de Comportamento
 - [ ] Definições de arquétipos de usuário
 - [ ] Padrões de comportamento realistas
 - [ ] Algoritmos de temporização de requisições
 - [ ] Gerenciamento de estado de sessão
 - [ ] Lógica de simulação de erros
 
-#### Fase 3: Recursos Avançados (Semana 3)
+#### Fase 3: Recursos Avançados
 - [ ] Jornadas complexas de usuário
 - [ ] Mecanismos de limpeza de dados
 - [ ] Integração abrangente de métricas
 - [ ] Otimização de performance
 - [ ] Gerenciamento de memória
 
-#### Fase 4: Prontidão para Produção (Semana 4)
+#### Fase 4: Prontidão para Produção
 - [ ] Testes extensivos
 - [ ] Conclusão da documentação
 - [ ] Benchmarking de performance

@@ -77,7 +77,7 @@ Criar um comando Hyperf que simule tráfego realista na API para:
 
 ## 🚀 Fases de Implementação
 
-### Fase 1: Infraestrutura Principal (Semana 1)
+### Fase 1: Infraestrutura Principal
 **Entregáveis:**
 - [ ] Estrutura base do UserPopulateCommand
 - [ ] Gerenciador de Cliente HTTP com pool de conexões
@@ -89,7 +89,7 @@ Criar um comando Hyperf que simule tráfego realista na API para:
 - Consegue fazer requisições HTTP básicas
 - Sistema de configuração funcional
 
-### Fase 2: Motor de Simulação de Usuário (Semana 2)
+### Fase 2: Motor de Simulação de Usuário
 **Entregáveis:**
 - [ ] Fábrica de Simulador de Usuário
 - [ ] Motor de Comportamento com 4 tipos de usuário
@@ -101,7 +101,7 @@ Criar um comando Hyperf que simule tráfego realista na API para:
 - Padrões de comportamento realistas
 - Cenários de erro implementados
 
-### Fase 3: Recursos Avançados (Semana 3)
+### Fase 3: Recursos Avançados
 **Entregáveis:**
 - [ ] Coletor de Métricas integrado
 - [ ] Relatório de Progresso com exibição em tempo real
@@ -113,7 +113,7 @@ Criar um comando Hyperf que simule tráfego realista na API para:
 - Display de progresso funcional
 - Uso de memória estável
 
-### Fase 4: Pronto para Produção (Semana 4)
+### Fase 4: Pronto para Produção
 **Entregáveis:**
 - [ ] Otimizações de performance
 - [ ] Tratamento de desligamento gracioso
