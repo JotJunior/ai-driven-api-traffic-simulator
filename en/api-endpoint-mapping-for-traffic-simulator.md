@@ -6,7 +6,7 @@ This document provides a comprehensive mapping of all API endpoints in the User 
 
 ## Base URL
 - HTTP: `http://localhost:9501`
-- HTTPS: `https://api.fotus.com.br/user-service`
+- HTTPS: `https://api.empresa.com.br/user-service`
 
 ## Authentication
 
@@ -26,9 +26,9 @@ Authorization: Bearer {jwt_token}
 **Request Body**:
 ```json
 {
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "password": "senha123@",
-  "client_id": "fotus-client",
+  "client_id": "empresa-client",
   "client_secret": "client-secret-123"
 }
 ```
@@ -89,7 +89,7 @@ Authorization: Bearer {jwt_token}
 ```json
 {
   "refresh_token": "def502004a1b2c3d4e5f6789...",
-  "client_id": "fotus-client",
+  "client_id": "empresa-client",
   "client_secret": "client-secret-123"
 }
 ```
@@ -123,7 +123,7 @@ Authorization: Bearer {jwt_token}
 ```json
 {
   "user_id": "550e8400-e29b-41d4-a716-446655440000",
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "scopes": ["read", "write"],
   "expires_at": "2024-12-31 23:59:59"
 }
@@ -164,7 +164,7 @@ GET /api/v1/users?page=1&limit=20&search=joao&is_active=true
     {
       "id": "550e8400-e29b-41d4-a716-446655440000",
       "username": "joao.silva",
-      "email": "joao.silva@fotus.com.br",
+      "email": "joao.silva@empresa.com.br",
       "name": "João Silva Santos",
       "is_active": true,
       "created_at": "2024-01-15T10:30:00Z"
@@ -211,7 +211,7 @@ GET /api/v1/users/search?q=joão&page=1&limit=10
     {
       "id": "550e8400-e29b-41d4-a716-446655440000",
       "username": "joao.silva",
-      "email": "joao.silva@fotus.com.br",
+      "email": "joao.silva@empresa.com.br",
       "name": "João Silva Santos",
       "is_active": true
     }
@@ -253,7 +253,7 @@ GET /api/v1/users/550e8400-e29b-41d4-a716-446655440000
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "name": "João Silva Santos",
   "phone_number": "+5511999887766",
   "document_number": "12345678901",
@@ -292,7 +292,7 @@ GET /api/v1/users/550e8400-e29b-41d4-a716-446655440000
 
 **Example Request**:
 ```
-GET /api/v1/users/email/joao.silva@fotus.com.br
+GET /api/v1/users/email/joao.silva@empresa.com.br
 ```
 
 **Success Response (200)**:
@@ -300,7 +300,7 @@ GET /api/v1/users/email/joao.silva@fotus.com.br
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "name": "João Silva Santos",
   "is_active": true
 }
@@ -335,7 +335,7 @@ GET /api/v1/users/username/joao.silva
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "name": "João Silva Santos",
   "is_active": true
 }
@@ -361,7 +361,7 @@ GET /api/v1/users/username/joao.silva
 ```json
 {
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "password": "senha123@",
   "name": "João Silva Santos",
   "phone_number": "+5511999887766",
@@ -374,7 +374,7 @@ GET /api/v1/users/username/joao.silva
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "name": "João Silva Santos",
   "phone_number": "+5511999887766",
   "document_number": "12345678901",
@@ -407,7 +407,7 @@ GET /api/v1/users/username/joao.silva
 ```json
 {
   "username": "joao.silva.updated",
-  "email": "joao.silva.updated@fotus.com.br",
+  "email": "joao.silva.updated@empresa.com.br",
   "name": "João Silva Santos Updated",
   "phone_number": "+5511999887777",
   "document_number": "12345678902"
@@ -419,7 +419,7 @@ GET /api/v1/users/username/joao.silva
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva.updated",
-  "email": "joao.silva.updated@fotus.com.br",
+  "email": "joao.silva.updated@empresa.com.br",
   "name": "João Silva Santos Updated",
   "phone_number": "+5511999887777",
   "document_number": "12345678902",
@@ -478,7 +478,7 @@ GET /api/v1/users/username/joao.silva
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "is_active": true,
   "updated_at": "2024-01-20T15:45:00Z"
 }
@@ -508,7 +508,7 @@ GET /api/v1/users/username/joao.silva
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
   "username": "joao.silva",
-  "email": "joao.silva@fotus.com.br",
+  "email": "joao.silva@empresa.com.br",
   "is_active": false,
   "updated_at": "2024-01-20T15:45:00Z"
 }
@@ -615,7 +615,7 @@ GET /api/v1/users/username/joao.silva
   "bio": "Desenvolvedor apaixonado por tecnologia",
   "website": "https://johndoe.com",
   "location": "São Paulo, Brasil",
-  "company": "Fotus Distribuidora Solar",
+  "company": "Empresa Distribuidora Solar",
   "job_title": "Desenvolvedor Senior",
   "birth_date": "1990-05-15",
   "gender": "male",
@@ -634,7 +634,7 @@ GET /api/v1/users/username/joao.silva
   "bio": "Desenvolvedor apaixonado por tecnologia",
   "website": "https://johndoe.com",
   "location": "São Paulo, Brasil",
-  "company": "Fotus Distribuidora Solar",
+  "company": "Empresa Distribuidora Solar",
   "job_title": "Desenvolvedor Senior",
   "birth_date": "1990-05-15",
   "gender": "male",
@@ -675,7 +675,7 @@ GET /api/v1/users/username/joao.silva
   "bio": "Desenvolvedor apaixonado por tecnologia",
   "website": "https://johndoe.com",
   "location": "São Paulo, Brasil",
-  "company": "Fotus Distribuidora Solar",
+  "company": "Empresa Distribuidora Solar",
   "job_title": "Desenvolvedor Senior",
   "birth_date": "1990-05-15",
   "gender": "male",
@@ -1334,7 +1334,7 @@ GET /api/v1/permissions?page=1&limit=10&resource=users&is_active=true
 ```json
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "roles": [
     {
       "id": "role-id-1",
@@ -1371,7 +1371,7 @@ GET /api/v1/permissions?page=1&limit=10&resource=users&is_active=true
 ```json
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "roles": [],
   "updated_at": "2024-01-20T15:45:00Z"
 }
@@ -1409,7 +1409,7 @@ GET /api/v1/permissions?page=1&limit=10&resource=users&is_active=true
 ```json
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "roles": [
     {
       "id": "role-id-1",
@@ -1463,7 +1463,7 @@ GET /api/v1/permissions?page=1&limit=10&resource=users&is_active=true
 ```json
 {
   "id": "550e8400-e29b-41d4-a716-446655440000",
-  "email": "user@fotus.com.br",
+  "email": "user@empresa.com.br",
   "roles": [
     {
       "id": "role-id-3",
